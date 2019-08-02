@@ -1529,7 +1529,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #997cd7;
+  background: #ffff9d;
 }
 .feed-link,
 .chat {
@@ -2832,7 +2832,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("/images/background.jpg");
+  background: url("../images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
