@@ -67,6 +67,8 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://liangguangwei211.github.io/blog.github.io/2019/08/01/Hexo搭建博客/landscape_demo.JPG">
 <meta property="og:image" content="https://liangguangwei211.github.io/blog.github.io/2019/08/01/Hexo搭建博客/next_demo.JPG">
+<meta property="og:image" content="https://liangguangwei211.github.io/blog.github.io/2019/08/01/Hexo搭建博客/github_create_repository.JPG">
+<meta property="og:image" content="https://liangguangwei211.github.io/blog.github.io/2019/08/01/Hexo搭建博客/repository_url.JPG">
 <meta property="og:updated_time" content="2019-08-02T06:12:11.553Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建博客">
@@ -372,10 +374,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// 添加背景图片</span><br><span class="line">body &#123;</span><br><span class="line">  background: url(/images/background.jpg);</span><br><span class="line">  background-size: cover;</span><br><span class="line">  background-repeat: no-repeat;</span><br><span class="line">  background-attachment: fixed;</span><br><span class="line">  background-position: 50% 50%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 修改主体透明度</span><br><span class="line">.main-inner &#123;</span><br><span class="line">  background: <span class="comment">#fff;</span></span><br><span class="line">  opacity: 0.9;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 修改菜单栏透明度</span><br><span class="line">.header-inner &#123;</span><br><span class="line">  background: rgba(255,255,255,.9);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 搜索框的透明度</span><br><span class="line">.<span class="built_in">local</span>-search-popup &#123;</span><br><span class="line">  opacity: 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="部署Hexo到github"><a href="#部署Hexo到github" class="headerlink" title="部署Hexo到github"></a>部署Hexo到github</h2><p>首先要有一个github账号，新建一个repository，如下图</p>
-
+<img src="/blog.github.io/2019/08/01/Hexo搭建博客/github_create_repository.JPG" title="github_create_repository">
 
 <p>建好后，下图中的即为仓库地址</p>
-
+<img src="/blog.github.io/2019/08/01/Hexo搭建博客/repository_url.JPG" title="repository_url">
 
 <p>hexo的配置文件_config.yml中设置：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/liangguangwei211/blog_test.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
